@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model in CSS</title>
+
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      /* what is padding?
+        Padding is the space between the content and the border of an element.  It creates space inside the element, around the content.  
+        You can set padding using the padding property in CSS.
+        */
+      padding: 20px;
+      
+      /* for Space Between content and border */
+      margin: 10px;
+
+      border: 1px solid black;
+     
+      box-sizing: border-box;
+      background-color: lightblue;
+    }
+    #org {
+      background-color: orange;
+    }
+    #wht {
+      background-color: white;
+    }
+    #grn {
+      background-color: green;
+    }
+  </style>
+
+</head>
+<body>
+  <div class = "box" id="org">A</div>
+  <div class = "box" id="wht">B</div>
+  <div class = "box" id="grn">C</div>
+
+</body>
+</html>

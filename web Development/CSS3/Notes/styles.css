@@ -1,0 +1,36 @@
+div{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 2px solid black;
+}
+
+.box{
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+
+#box3{
+  position: relative;
+  left: 100px;
+  top: 200px;
+}
+
+#box1{
+  position : fixed;
+}
+
+.wrapped{
+  width: 100vw;
+  height: 1000px;
+  background-color: yellow;
+
+}
+
+#box4{
+  position :sticky;
+  top: 0;
+  background-color: orange;
+}

@@ -1,0 +1,30 @@
+.container{
+  height: 400px;
+  border: 2px solid black;
+  display:flex; /* establishes flex context */
+  flex-direction: row ; /* main axis is horizontal */
+  flex-wrap: wrap; /* allow items to wrap to next line */
+  justify-content: center; /* center items horizontally */
+  justify-content: space-around;/* distribute items with space around them */
+  justify-content: space-between; /* distribute items with space between them */
+
+  align-items: center; /* center items vertically */
+ 
+   align-items: stretch; /* stretch items to fill container height */  
+  align-items: flex-start; /* align items to the top */
+  align-items: flex-end; /* align items to the bottom */
+  align-items: baseline; /* align items along their text baselines */
+
+  gap: 10px; /* space between items */
+
+  align-content: center; /* center lines vertically when there is extra space */
+  align-content: space-between; /* distribute lines with space between them */
+  align-content: stretch; /* stretch lines to fill container height */  
+  
+}
+
+.box{
+  border: 1px solid brown;
+  background-color: lightseagreen;
+  width: 100px;
+}

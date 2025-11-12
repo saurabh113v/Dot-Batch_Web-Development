@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specificity</title>
+</head>
+<body>
+  <h1>What is Specificity?</h1>
+  <p>Specificity is a set of rules that browsers use to determine which CSS rule to apply when multiple rules could apply to the same element. It is calculated based on the types of selectors used in the CSS.</p>
+  <h2>Example of Specificity</h2>
+  <p>Consider the following CSS rules:</p>
+  <pre>
+  p {
+    color: blue;
+  } 
+  .highlight {
+    color: red;
+  }
+  #unique {
+    color: green;
+  }
+  </pre>
+  <p>In this example, if a paragraph has the class "highlight" and the id "unique", the text color will be green because the ID selector has higher specificity than the class selector and the element selector.</p>  
+  <h2>Specificity Hierarchy</h2>
+  <ul>
+    <li>Inline styles (e.g., style="color: blue;") - highest specificity</li>
+    <li>ID selectors (e.g., #unique)</li>   
+    <li>Class selectors (e.g., .highlight), attribute selectors (e.g., [type="text"]), and pseudo-classes (e.g., :hover)</li>
+    <li>Element selectors (e.g., p, h1) and pseudo-elements (e.g., ::before)</li>
+    <li>Universal selector (*) - lowest specificity</li>
+  </ul> 
+
+  <h3>Draw a Hierarchy of specificity</h3>
+  <p>Inline styles &gt; ID selectors &gt; Class/Attribute/Pseudo-class selectors &gt; Element/Pseudo-element selectors &gt; Universal selector</p>
+  
+  
+  <p>Understanding specificity is crucial for writing effective CSS and ensuring that the desired styles are applied to HTML elements.</p>  
+
+</body>
+</html>

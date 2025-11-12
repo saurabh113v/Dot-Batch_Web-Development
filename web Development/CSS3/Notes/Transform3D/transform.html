@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Transform</title>
+</head>
+<body>
+  <h1>3D Transform in CSS ?</h1>
+  <p>CSS 3D Transforms allow you to create three-dimensional effects on web elements by manipulating their position and perspective in a 3D space. This is achieved using properties such as <code>transform</code>, <code>perspective</code>, and <code>transform-style</code>.</p>  
+  <h2>Key Properties</h2>
+  <ul>  
+    <li><strong>transform:</strong> This property is used to apply 3D transformations like <code>rotateX()</code>, <code>rotateY()</code>, <code>rotateZ()</code>, <code>translateZ()</code>, and <code>scaleZ()</code>.</li>
+    <li><strong>perspective:</strong> This property defines the perspective from which the 3D elements are viewed, giving a sense of depth.</li>
+    <li><strong>transform-style:</strong> This property specifies how nested elements are rendered in 3D space, with the value <code>preserve-3d</code> allowing child elements to maintain their 3D position.</li>
+  </ul>
+  <h2>Example</h2>
+  <pre><code>.box {
+  width: 100px;   
+  height: 100px;
+  background-color: lightblue;
+  transform: rotateX(45deg) rotateY(30deg) translateZ(50px);
+  perspective: 500px;
+  transform-style: preserve-3d;
+}</code></pre>
+  <p>In this example, a box is rotated along the X and Y axes and translated along the Z-axis, creating a 3D effect.</p>  
+  
+
+</body>
+</html>

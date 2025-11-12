@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+</head>
+<body>
+  <h1>Flexbox</h1>
+  <p>Flexbox, or the Flexible Box Layout, is a CSS layout module designed to improve the alignment, direction, and order of items within a container, even when their size is unknown or dynamic. It provides a more efficient way to lay out, align, and distribute space among items in a container, even when their size is unknown or dynamic.</p>  
+  <h2>Key Concepts</h2>
+  <ul>
+    <li><strong>Flex Container:</strong> The parent element that holds the flex items. It is defined by setting the CSS property <code>display: flex;</code> or <code>display: inline-flex;</code>.</li>
+    <li><strong>Flex Items:</strong> The child elements inside a flex container that are laid out using the flexbox model.</li>
+  </ul>
+  <h2>Main Properties of Flex Container</h2>
+  <ul>
+    <li><code>flex-direction:</code> Defines the direction of the main axis (row, row-reverse, column, column-reverse).</li>
+    <li><code>justify-content:</code> Aligns items along the main axis (flex-start, flex-end, center, space-between, space-around, space-evenly).</li>
+    <li><code>align-items:</code> Aligns items along the cross axis (flex-start, flex-end, center, baseline, stretch).</li>
+    <li><code>flex-wrap:</code> Controls whether the flex container is single-line or multi-line (nowrap, wrap, wrap-reverse).</li> 
+    <li><code>align-content:</code> Aligns the flex lines when there is extra space in the cross axis (flex-start, flex-end, center, space-between, space-around, stretch).</li>
+  </ul>
+  <h2>Main Properties of Flex Items</h2>
+  <ul>
+    <li><code>order:</code> Controls the order of the flex items.</li>
+    <li><code>flex-grow:</code> Defines the ability of a flex item to grow if necessary.</li>
+    <li><code>flex-shrink:</code> Defines the ability of a flex item to shrink if necessary.</li>
+    <li><code>flex-basis:</code> Defines the default size of a flex item before the remaining space is distributed.</li>
+    <li><code>align-self:</code> Allows the default alignment (or the one specified by <code>align-items</code>) to be overridden for individual flex items.</li> 
+  </ul>
+  <h2>Example</h2>
+  <pre><code>.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+</code></pre> 
+  <p>This example creates a flex container with items that grow and shrink as needed, centered both horizontally and vertically.</p>  
+  
+
+  <h3>Difference between flex-basis and width ?</h3>
+  <p><strong>flex-basis</strong> sets the initial main size of a flex item before any available space is distributed according to the flex-grow and flex-shrink properties. It can be thought of as the "ideal" size of the item within the flex container. On the other hand, <strong>width</strong> sets the actual width of an element in a non-flex context. When used in a flex container, width can be overridden by flex properties, whereas flex-basis directly influences how space is allocated among flex items.</p>
+
+  <h4>Examples</h4>
+  <p>Consider a flex container with three items:</p>
+  <pre><code>.container {
+  display: flex;
+}
+.item1 {
+  flex-basis: 100px;
+}
+.item2 {
+  width: 150px;
+}
+.item3 {
+  flex-basis: 200px;
+}
+</code></pre>   
+  <p>In this example, item1 will ideally take up 100px of space, item2 will have a fixed width of 150px, and item3 will ideally take up 200px of space. However, if the container's total width is less than the sum of these sizes, the flex-grow and flex-shrink properties will determine how the available space is distributed among the items.</p>
+
+</body>
+</html>

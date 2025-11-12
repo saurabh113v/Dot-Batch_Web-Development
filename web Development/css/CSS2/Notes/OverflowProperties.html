@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overflow Properties</title>
+</head>
+<body>
+  <h1>CSS Overflow Properties</h1>
+  <p>CSS overflow properties are used to control how content that exceeds the dimensions of its container is handled. These properties help manage the visibility and behavior of overflowing content, ensuring a better user experience on web pages.</p>  
+  <h2>Common CSS Overflow Properties</h2>
+  <ul>    
+    <li><strong>overflow:</strong> This property specifies what happens to content that overflows the bounds of its container. It can take values such as <code>visible</code>, <code>hidden</code>, <code>scroll</code>, and <code>auto</code>.</li> 
+
+    Example values:
+    <ul>
+      <li><code>visible</code>: The overflow is not clipped and will be visible outside the element's box.</li>
+      <li><code>hidden</code>: The overflow is clipped, and the rest of the content will be invisible.</li>
+      <li><code>scroll</code>: The overflow is clipped, but a scrollbar is added to see the rest of the content.</li>
+      <li><code>auto</code>: If the content overflows, a scrollbar will be added; otherwise, it behaves like <code>visible</code>.</li>
+    </ul>   
+    
+    
+    <li><strong>overflow-x:</strong> This property controls the horizontal overflow of content. It can be set to the same values as the <code>overflow</code> property but only affects the horizontal axis.</li>
+
+    <li><strong>overflow-y:</strong> This property manages the vertical overflow of content. Similar to <code>overflow-x</code>, it can be set to control only the vertical axis.</li>
+  </ul>
+
+  
+  <h2>Example of CSS Overflow Properties</h2>
+  <div style="width: 200px; height: 100px; border: 2px solid #000; overflow: scroll; background-color: lightcoral;">
+    This box demonstrates CSS overflow properties. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+  <h3>Conclusion</h3>
+  <p>Understanding and utilizing CSS overflow properties is essential for managing content layout on web pages. By effectively controlling how overflowing content is displayed, you can enhance the overall user experience and maintain a clean design.</p>
+  
+</body>
+</html>
